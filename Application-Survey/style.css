@@ -1,0 +1,22 @@
+div {
+    padding: 1px 25px 25px 25px;
+    color: white;
+    background-color: #346c74;
+    max-width: 700px;
+    height: auto;
+    margin: auto auto;
+  }
+  h1,
+  #description {
+    position: relative;
+    text-align: center;
+    top: -20px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  
+  label {
+    line-height: 30px;
+  }
+  

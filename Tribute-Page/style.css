@@ -1,0 +1,19 @@
+#img-div {
+    text-align: center;
+  }
+  
+  #image {
+    display: block;
+    margin: auto auto;
+    max-width: 50%;
+    height: auto;
+  }
+  
+  #img-caption {
+    display: block;
+  }
+  
+  h1,
+  #tribute-info {
+    text-align: center;
+  }

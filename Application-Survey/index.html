@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Survey</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+
+<body>
+  <div id="survey">
+    <h1 id="title">Application Survey</h1>
+    <p id="description">Please fill in the below information to the best of your ability</p>
+
+    <form id="survey-form">
+      <label for="name" id="name-label">Name:</label><br>
+      <input type="text" id="name" placeholder="ex. John Smith" required><br>
+
+      <label for="email" id="email-label">Email:</label><br>
+      <input type="email" id="email" placeholder="ex. name@gmail.com" required><br>
+
+      <label for="number" id="number-label">Age:</label><br>
+      <input type="number" id="number" min="14" max="120" placeholder="14+" required><br>
+
+      <label for="dropdown">Highest Relative Experience:</label><br>
+      <select id="dropdown">
+        <option>Highschol Diploma</option>
+        <option>Bachelors</option>
+        <option>Masters</option>
+        <option>PhD</option>
+      </select><br>
+
+      <label>Position:</label><br>
+      <input type="radio" name="pos" value="front">Front End</input><br>
+      <input type="radio" name="pos" value="back">Back End</input><br>
+      <input type="radio" name="pos" value="full">Full Stack</input><br>
+      <input type="radio" name="pos" value="hr">Human Resources</input><br>
+      
+      <label>Languages:</label><br>
+      <input type="checkbox" value="html">HTML</input>
+      <input type="checkbox" value="css">CSS</input>
+      <input type="checkbox" value="javascript">JavaScript</input>
+      <input type="checkbox" value="python">Python</input>
+      <input type="checkbox" value="react">React</input>
+      <input type="checkbox" value="node.js">Node.js</input><br>
+      <label for="ta">Explain your interest in joining:</label><br>
+      <textarea id="ta"></textarea><br>
+
+      <input type="submit" id="submit"></input>
+  </div>
+</body>
+
+</html>
