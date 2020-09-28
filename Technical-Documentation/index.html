@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>JavaScript Conditionals</header>
+        <div><a href="#Making_decisions_in_your_code_-_conditionals" class="nav-link">Making decisions in your code - conditionals</a><br></div>
+        <div><a href="#You_can_have_it_on_one_condition..!" class="nav-link">You can have it on one condition..!</a><br></div>
+        <div><a href="#if...else_statements" class="nav-link">if...else statements</a><br></div>
+        <div><a href="#Switch_Statements" class="nav-link">Switch Statements</a><br></div>
+        <div><a href="#Ternary_operator" class="nav-link">Ternary operator</a><br></div>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Making_decisions_in_your_code_-_conditionals">
+            <header>Making decisions in your code - conditionals</header>
+            <p>In any programming language, the code needs to make decisions and carry out actions accordingly depending on different inputs. For example, in a game, if the player's number of lives is 0, then it's game over. In a weather app, if it is being looked at in the morning, show a sunrise graphic; show stars and a moon if it is nighttime. In this article, we'll explore how so-called conditional statements work in JavaScript.</p>
+        </section>
+        <section class="main-section" id="You_can_have_it_on_one_condition..!">
+            <header>You can have it on one condition..!</header>
+            <p>Human beings (and other animals) make decisions all the time that affect their lives, from small ("should I eat one cookie or two?") to large ("should I stay in my home country and work on my father's farm, or should I move to America and study astrophysics?")</p><br>
+            <p>Conditional statements allow us to represent such decision making in JavaScript, from the choice that must be made (for example, "one cookie or two"), to the resulting outcome of those choices (perhaps the outcome of "ate one cookie" might be "still felt hungry", and the outcome of "ate two cookies" might be "felt full, but mom scolded me for eating all the cookies".)</p>
+        </section>
+        <section class="main-section" id="if...else_statements">
+            <header>if...else statements</header>
+            <p>Let's look at by far the most common type of conditional statement you'll use in JavaScript — the humble if...else statement.</p>
+            <p>Basic if...else syntax looks like the following in pseudocode:</p><br>
+            <code>if (condition) {<br>code to run if condition is true<br>} <br>else {<br>run some other code instead<br>}</code><br>
+            <p>Here we've got:</p>
+            <ol>
+                <li>The keyword if followed by some parentheses.</li>
+                <li>A condition to test, placed inside the parentheses (typically "is this value bigger than this other value?", or "does this value exist?"). The condition makes use of the comparison operators we discussed in the last module and returns true or false.</li>
+                <li>A set of curly braces, inside which we have some code — this can be any code we like, and it only runs if the condition returns true.</li>
+                <li>The keyword else.</li>
+                <li>Another set of curly braces, inside which we have some more code — this can be any code we like, and it only runs if the condition is not true — or in other words, the condition is false.</li><br>
+            </ol>
+            <p>This code is pretty human-readable — it is saying "if the condition returns true, run code A, else run code B"</p><br>
+            <p>You should note that you don't have to include the else and the second curly brace block — the following is also perfectly legal code:</p><br>
+            <code>if (condition) {<br>
+                code to run if condition is true<br>
+              }<br>
+              <br>
+              run some other code</code>
+        </section>
+        <section class="main-section" id="Switch_Statements">
+            <header>Switch Statements</header>
+            <p>if...else statements do the job of enabling conditional code well, but they are not without their downsides. They are mainly good for cases where you've got a couple of choices, and each one requires a reasonable amount of code to be run, and/or the conditions are complex (for example, multiple logical operators). For cases where you just want to set a variable to a certain choice of value or print out a particular statement depending on a condition, the syntax can be a bit cumbersome, especially if you've got a large number of choices.</p><br>
+            <p>In such a case, switch statements are your friend — they take a single expression/value as an input, and then look through a number of choices until they find one that matches that value, executing the corresponding code that goes along with it. Here's some more pseudocode, to give you an idea:</p><br>
+            <code>switch (expression) {<br>
+                case choice1:<br>
+                  run this code<br>
+                  break;<br>
+                  <br>
+                case choice2:<br>
+                  run this code instead<br>
+                  break;<br>
+                  <br>
+                // include as many cases as you like<br>
+                <br>
+                default:<br>
+                  actually, just run this code<br>
+              }</code><br>
+        </section>
+        <section class="main-section" id="Ternary_operator">
+            <header>Ternary operator</header>
+            <p>There is one final bit of syntax we want to introduce you to before we get you to play with some examples. The ternary or conditional operator is a small bit of syntax that tests a condition and returns one value/expression if it is true, and another if it is false — this can be useful in some situations, and can take up a lot less code than an if...else block if you simply have two choices that are chosen between via a true/false condition. The pseudocode looks like this:</p><br>
+            <code>( condition ) ? run this code : run this code instead</code><br>
+            <p>So let's look at a simple example:</p><br>
+            <code>let greeting = ( isBirthday ) ? 'Happy birthday Mrs. Smith — we hope you have a great day!' : 'Good morning Mrs. Smith.';</code><br>
+            <p>Here we have a variable called isBirthday — if this is true, we give our guest a happy birthday message; if not, we give her the standard daily greeting.</p>
+        </section>
+    </main>
+</body>
+</html>
